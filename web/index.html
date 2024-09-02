@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de login e Registro com HTML5 CSS3</title>
-<link rel= "stylesheet" type="text/css" href="CSSLOGIN.CSS" />
+<link rel= "stylesheet" type="text/css" href="estilo.css" />
 
 <script language ="javascript" type="text/javascript">
     function validarCadastro() {
@@ -52,7 +56,7 @@
         return false;
     }
     else {
-       alert ('Bem vindo ao Sistema' + email_login);
+       alert ('Bem vindo ao Sistema ' + email_login);
     }
 }
     
@@ -66,7 +70,7 @@
 <div class="content">
     <!--Formulário de login-->
     <div id= "login">
-        <form name="formLogin" method="post" action="">
+        <form name="formLogin" method="post" action="Login">
             <h1>Login</h1>
             <p>
                 <label for="nome login"> Seu e-mail</label>
@@ -91,7 +95,7 @@
                     
                 </p>
 
-                <p class="link">
+                <p class="Login">
                    Ainda não tem conta?
                 <a href="#paracadastro"> Cadastre-se</a>
             </p>
@@ -100,7 +104,7 @@
     </div>
     <!--Formulário de Cadastro-->
     <div id="cadastro">
-        <form name="formCadastro" method="post" action="">
+        <form name="formCadastro" method="post" action="CadastroServlet">
             <h1>Cadastro</h1>
 
             <p>
@@ -125,7 +129,7 @@
              onclick="return validarCadastro ()" />
 
             </p>
-            <p class="link">
+            <p class="CadastroServlet">
              Já tem conta?
              <a href="#paralogin"> Ir para login</a>
                 
